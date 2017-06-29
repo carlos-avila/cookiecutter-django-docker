@@ -1,0 +1,13 @@
+{
+  "project_name"        : "Tasty Trombone",
+  "project_slug"        : "{{cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "project_domain"      : "{{cookiecutter.project_slug.lower()|replace(' ', '-')|replace('_', '-') }}.com",
+  "project_author"      : "{{cookiecutter.project_name}} Team",
+  "project_email"       : "contact@{{cookiecutter.project_domain}}",
+  "project_description" : "Awesome elevator pitch for {{cookiecutter.project_name}}.",
+  "repository_type"     : "git",
+  "repository_url"      : "https://github.com/{{cookiecutter.project_author|replace(' ', '_')|replace('-', '_')}}/{{cookiecutter.project_slug}}.git",
+  "_copy_without_render": [
+    "*.html"
+  ]
+}
