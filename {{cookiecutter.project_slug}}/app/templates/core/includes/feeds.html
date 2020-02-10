@@ -1,0 +1,4 @@
+{% for feed in feeds %}
+    <link rel="alternate" type="{{ feed.type }}" title="{{ feed.title }}" href="{{ feed.url }}"/>
+{% endfor %}
+
